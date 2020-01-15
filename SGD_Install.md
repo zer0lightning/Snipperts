@@ -18,14 +18,16 @@
 **SGD Oracle Linux 7.0** Processor: 2 Core / RAM: 4gb / HDD: 200gb
 >Network Adapter1: BridgeMode (Allow Promiscous) - Internal
 
->Network Adapter2: NAT (Allow Promiscous) - Internet
-
    > Login using root
 
  - Set IP: 142.232.141.X
  - Subnet: 255.255.255.0
  - DNS: 142.232.141.X
  - Gateway: 142.232.141.X
+ 
+ >Network Adapter2: NAT (Allow Promiscous) - Internet
+ 
+ >DNS: 8.8.8.8
 
 **2. Installation of SGD 5.5 on Oracle Linux 7 Fails with Dependency Message, "Requires: libtclx8.4.so()"**
 
