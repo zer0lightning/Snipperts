@@ -25,6 +25,7 @@ Network Adapter1: BridgeMode (Allow Promiscous) - Internal
  - Gateway: 142.232.141.X
 
 **2. Installation of SGD 5.5 on Oracle Linux 7 Fails with Dependency Message, "Requires: libtclx8.4.so()"**
+
 Open Terminal
 > cd ~
 
