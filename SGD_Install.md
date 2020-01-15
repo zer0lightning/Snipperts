@@ -1,6 +1,6 @@
 ## Installing Secure Global Desktop with Oracle Linux 7.0
 
-**1. Download and Install SGD Oracle Linux 7.0**
+**1. Download and Virtualbox Guests**
 
 **Windows Server 2019 DNS** 
 >Processor: 2 Core / RAM: 4gb / HDD: 200gb
