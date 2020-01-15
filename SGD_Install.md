@@ -1,6 +1,6 @@
 ## Installing Secure Global Desktop with Oracle Linux 7.0
 
-**1. DInstall Virtualbox Guests**
+**1. Install Virtualbox Guests**
 
 **Windows Server 2019 DNS**
 
