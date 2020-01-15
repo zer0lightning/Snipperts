@@ -2,7 +2,8 @@
 
 **1. Download and Virtualbox Guests**
 
-**Windows Server 2019 DNS** 
+**Windows Server 2019 DNS**
+
 >Processor: 2 Core / RAM: 4gb / HDD: 200gb
 
 >Network Adapter1: BridgeMode (Allow Promiscous) - Internal
