@@ -33,7 +33,7 @@ Open Terminal
 
 > yum install lib64tclx8.4-8.4-2.mga3.x86_64.rpm
 
-Follow the docs installing the setting up requirements and user accounts
+Follow the docs installing and  setting up user accounts and groups.
 Download and Extract SGD Package **SGD5.5.zip** and Install Server
 > http://www.mediafire.com/file/1yt2609m8b6jhhy/SGD5.5.zip/file
 
