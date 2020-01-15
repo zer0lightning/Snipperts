@@ -4,6 +4,7 @@
 
 **Windows Server 2019 DNS** 
 >Processor: 2 Core / RAM: 4gb / HDD: 200gb
+
 >Network Adapter1: BridgeMode (Allow Promiscous) - Internal
 	
  - Change Computer Name, Disable Firewall and Update 
@@ -15,6 +16,7 @@
 
 **SGD Oracle Linux 7.0** Processor: 2 Core / RAM: 4gb / HDD: 200gb
 >Network Adapter1: BridgeMode (Allow Promiscous) - Internal
+
 >Network Adapter2: NAT (Allow Promiscous) - Internet
 
    > Login using root
