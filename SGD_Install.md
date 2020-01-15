@@ -22,7 +22,7 @@ Network Adapter1: BridgeMode (Allow Promiscous) - Internal
 Open Terminal
 > cd ~
 
-wget https://www.rpmfind.net/linux/mageia/distrib/3/x86_64/media/core/release/lib64tclx8.4-8.4-2.mga3.x86_64.rpm
+> wget https://www.rpmfind.net/linux/mageia/distrib/3/x86_64/media/core/release/lib64tclx8.4-8.4-2.mga3.x86_64.rpm
 
 > yum install lib64tclx8.4-8.4-2.mga3.x86_64.rpm
 
@@ -35,6 +35,6 @@ Follow the docs installing the .rpm packages
 
 >wget [https://pastebin.com/raw/1W9trRje](https://pastebin.com/raw/1W9trRje) -O /root/firewalld.sh
 
-chmod +x /etc/rc.local
+>chmod +x /etc/rc.local
 
-echo “/root/firewalld.sh” >> /etc/rc.local
+>echo “/root/firewalld.sh” >> /etc/rc.local
