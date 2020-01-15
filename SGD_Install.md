@@ -18,7 +18,6 @@ Network Adapter1: BridgeMode (Allow Promiscous) - Internal
 			    Network Adapter2: NAT (Allow Promiscous) - Internet
    > Login using root
 
- - Change Computer Name, Disable Firewall and Update 
  - Set IP: 142.232.141.X
  - Subnet: 255.255.255.0
  - DNS: 142.232.141.X
