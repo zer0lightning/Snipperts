@@ -12,6 +12,7 @@ Network Adapter1: BridgeMode (Allow Promiscous) - Internal
  - Install DNS Role and Setup a NS Record and A Record
 
 **ISO:** [https://tiny.cc/oraclelinux](https://tiny.cc/oraclelinux)
+
 **SGD Oracle Linux 7.0** Processor: 2 Core / RAM: 4gb / HDD: 200gb
 			    Network Adapter1: BridgeMode (Allow Promiscous) - Internal
 			    Network Adapter2: NAT (Allow Promiscous) - Internet
