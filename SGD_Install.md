@@ -44,7 +44,7 @@ Follow the docs installing the .rpm packages
 
 **3. Allowing SGD to Expose Port 80 and 443**
 
->wget [https://pastebin.com/raw/1W9trRje](https://pastebin.com/raw/1W9trRje) -O /root/firewalld.sh
+>wget [https://raw.githubusercontent.com/zer0lightning/Snipperts/master/firewalld.sh](https://raw.githubusercontent.com/zer0lightning/Snipperts/master/firewalld.sh) -O /root/firewalld.sh
 
 >chmod +x /etc/rc.local
 
