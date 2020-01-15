@@ -29,6 +29,7 @@ Open Terminal
 Follow the docs installing the setting up requirements and user accounts
 Download and Extract SGD Package **SGD5.5.zip** and Install Server
 > http://www.mediafire.com/file/1yt2609m8b6jhhy/SGD5.5.zip/file
+
 Follow the docs installing the .rpm packages
 
 **3. Allowing SGD to Expose Port 80 and 443**
