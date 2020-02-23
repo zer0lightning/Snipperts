@@ -8,19 +8,19 @@
 
 >Processor: 2 Core / RAM: 4gb / HDD: 200gb
 
->Network Adapter1: BridgeMode (Allow Promiscous) - Internal
+>Network Adapter1: BridgeMode (Allow Promiscuous) - Internal
 	
  - Change Computer Name, Disable UAC, Disable Firewall and Update 
  - Set IP: 142.232.141.X
  - Subnet: 255.255.255.0
- - Promote to AD and create new forrest
+ - Promote to AD and create new forest
  - Configure DNS Role and Setup a NS Record and A Record
  - Create A for all the host and check PTR for each
  - Remote Desktop Services will be confiured later
 
 **SGD Oracle Linux 7.7** Processor: 2 Core / RAM: 4gb / HDD: 200gb
 **ISO:** [https://tiny.cc/oraclelinux77](https://tiny.cc/oraclelinux77)
->Network Adapter1: BridgeMode (Allow Promiscous) - Internal
+>Network Adapter1: BridgeMode (Allow Promiscuous) - Internal
 **Installation Screen**
 - Software Selection: Server with GUI, Java Support, System Administration Tools, Compatibility Libarires
    > Login using root
