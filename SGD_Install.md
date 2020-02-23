@@ -1,5 +1,7 @@
 ## Installing Secure Global Desktop with Oracle Linux 7.7
 
+**Notes: Choose the LM Adapter**
+
 **1. Install Virtualbox Guests**
 
 **Windows Server 2019 Activer Directory Services, DNS and Remote Desktop Services Roles**
