@@ -21,7 +21,8 @@
 **SGD Oracle Linux 7.7** Processor: 2 Core / RAM: 4gb / HDD: 200gb
 **ISO:** [https://tiny.cc/oraclelinux77](https://tiny.cc/oraclelinux77)
 >Network Adapter1: BridgeMode (Allow Promiscous) - Internal
-
+**Installation Screen**
+- Software Selection: Server with GUI, Java Support, System Administration Tools, Compatibility Libarires
    > Login using root
 
  - Set IP: 142.232.241.X
@@ -71,7 +72,7 @@ change enabled=0 to enabled=1
 
 
 **3. Download and Extract SGD Package**
-> http://www.mediafire.com/file/1yt2609m8b6jhhy/SGD5.5.zip/file
+> http://tiny.cc/sgdinstall
 
 Install SGD Server
 > yum install /tempdir/oracle-sgd-server-version.el7.x86_64.rpm
