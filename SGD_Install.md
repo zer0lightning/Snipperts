@@ -61,7 +61,7 @@ Open Terminal
 
 > yum-config-manager --enable ol7_optional_latest
 
-> nano /etc/yum.repos.d/public-yum-ol7.repo
+> nano /etc/yum.repos.d/oracle-linux-ol7.repo
 
 Look for Entry on [ol7_optional_latest]
 change enabled=0 to enabled=1
