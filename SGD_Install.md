@@ -58,8 +58,6 @@ Open Terminal
 
 > passwd -l ttaserv
 
-> nano /etc
-
 > yum-config-manager --enable ol7_optional_latest
 
 > nano /etc/yum.repos.d/public-yum-ol7.repo
