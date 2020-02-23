@@ -1,4 +1,4 @@
-## Installing Secure Global Desktop with Oracle Linux 7.0
+## Installing Secure Global Desktop with Oracle Linux 7.7
 
 **1. Install Virtualbox Guests**
 
@@ -13,41 +13,76 @@
  - Subnet: 255.255.255.0
  - Install DNS Role and Setup a NS Record and A Record
 
-**ISO:** [https://tiny.cc/oraclelinux](https://tiny.cc/oraclelinux)
+**ISO:** [https://tiny.cc/oraclelinux77](https://tiny.cc/oraclelinux77)
 
 **SGD Oracle Linux 7.0** Processor: 2 Core / RAM: 4gb / HDD: 200gb
 >Network Adapter1: BridgeMode (Allow Promiscous) - Internal
 
    > Login using root
 
- - Set IP: 142.232.141.X
+ - Set IP: 142.232.241.X
  - Subnet: 255.255.255.0
  - DNS: 142.232.141.X
- - Gateway: 142.232.141.X
+ - Gateway: 142.232.241.X
  
  >Network Adapter2: NAT (Allow Promiscous) - Internet
  
- >DNS: 8.8.8.8
+ >DNS: 142.232.241.X
 
 **2. Installation of SGD 5.5 on Oracle Linux 7 Fails with Dependency Message, "Requires: libtclx8.4.so()"**
 
 Open Terminal
-> cd ~
+> Login as root
 
-> wget https://www.rpmfind.net/linux/mageia/distrib/3/x86_64/media/core/release/lib64tclx8.4-8.4-2.mga3.x86_64.rpm
+> sudo -i 
 
-> yum install lib64tclx8.4-8.4-2.mga3.x86_64.rpm
+> systemctl stop firewalld
 
-Follow the docs installing and  setting up user accounts and groups.
-Download and Extract SGD Package **SGD5.5.zip** and Install Server
+> systemctl disable firewalld
+
+> nano /etc/hosts
+
+> add entry sgd.X.esa.bcit.ca 142.232.241.X
+
+> groupadd ttaserv
+
+> useradd -g ttaserv -s /bin/sh -d /home/ttasys -m ttasys
+
+> useradd -g ttaserv -s /bin/sh -d /home/ttaserv -m ttaserv
+
+> passwd -l ttasys
+
+> passwd -l ttaserv
+
+> nano /etc
+
+> yum-config-manager --enable ol7_optional_latest
+
+> nano /etc/yum.repos.d/public-yum-ol7.repo
+
+Look for Entry on [ol7_optional_latest]
+change enabled=0 to enabled=1
+
+> yum-config-manager --enable ol7_optional_latest
+
+> yum update
+
+
+**3. Download and Extract SGD Package**
 > http://www.mediafire.com/file/1yt2609m8b6jhhy/SGD5.5.zip/file
 
-Follow the docs installing the .rpm packages
+Install SGD Server
+> yum install /tempdir/oracle-sgd-server-version.el7.x86_64.rpm
+> /opt/tarantella/bin/tarantella start
 
-**3. Allowing SGD to Expose Port 80 and 443**
+Install Clients and Packages in order
+> yum install oracle-sgd-clients-version.el7.noarch.rpm
+> yum install oracle-sgd-clients-legacy-version.el7.noarch.rpm
+> yum install oracle-sgd-tems-version.el7.noarch.rpm
 
->wget [https://raw.githubusercontent.com/zer0lightning/Snipperts/master/firewalld.sh](https://raw.githubusercontent.com/zer0lightning/Snipperts/master/firewalld.sh) -O /root/firewalld.sh
+**Checklist**
+> useraccounts exist
+> firewall is down
+> SGD installed correctly with no errors and starts normally
+> visit http://localhost
 
->chmod +x /etc/rc.local
-
->echo “/root/firewalld.sh” >> /etc/rc.local
