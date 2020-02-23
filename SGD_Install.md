@@ -87,8 +87,10 @@ Install Clients and Packages in order
 
 **Add Linux Local Accounts**
 > sudo useradd XUsername
+
 > sudo passwd XUsername
-> Login atleast once to each account to generate the home folder.
+
+- Login atleast once to each account to generate the home folder.
 
 **Checklist**
 > useraccounts exist
