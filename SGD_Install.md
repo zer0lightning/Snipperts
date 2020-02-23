@@ -2,20 +2,21 @@
 
 **1. Install Virtualbox Guests**
 
-**Windows Server 2019 DNS**
+**Windows Server 2019 Activer Directory Services, DNS and Remote Desktop Services Roles**
 
 >Processor: 2 Core / RAM: 4gb / HDD: 200gb
 
 >Network Adapter1: BridgeMode (Allow Promiscous) - Internal
 	
- - Change Computer Name, Disable Firewall and Update 
+ - Change Computer Name, Disable UAC, Disable Firewall and Update 
  - Set IP: 142.232.141.X
  - Subnet: 255.255.255.0
- - Install DNS Role and Setup a NS Record and A Record
-
-**ISO:** [https://tiny.cc/oraclelinux77](https://tiny.cc/oraclelinux77)
+ - Promote to AD and create new forrest
+ - Configure DNS Role and Setup a NS Record and A Record
+ - Create A for all the host and check PTR for each
 
 **SGD Oracle Linux 7.0** Processor: 2 Core / RAM: 4gb / HDD: 200gb
+**ISO:** [https://tiny.cc/oraclelinux77](https://tiny.cc/oraclelinux77)
 >Network Adapter1: BridgeMode (Allow Promiscous) - Internal
 
    > Login using root
