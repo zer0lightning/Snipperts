@@ -15,7 +15,7 @@
  - Configure DNS Role and Setup a NS Record and A Record
  - Create A for all the host and check PTR for each
 
-**SGD Oracle Linux 7.0** Processor: 2 Core / RAM: 4gb / HDD: 200gb
+**SGD Oracle Linux 7.7** Processor: 2 Core / RAM: 4gb / HDD: 200gb
 **ISO:** [https://tiny.cc/oraclelinux77](https://tiny.cc/oraclelinux77)
 >Network Adapter1: BridgeMode (Allow Promiscous) - Internal
 
