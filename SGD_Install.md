@@ -73,16 +73,22 @@ change enabled=0 to enabled=1
 
 Install SGD Server
 > yum install /tempdir/oracle-sgd-server-version.el7.x86_64.rpm
+
 > /opt/tarantella/bin/tarantella start
 
 Install Clients and Packages in order
 > yum install oracle-sgd-clients-version.el7.noarch.rpm
+
 > yum install oracle-sgd-clients-legacy-version.el7.noarch.rpm
+
 > yum install oracle-sgd-tems-version.el7.noarch.rpm
 
 **Checklist**
 > useraccounts exist
+
 > firewall is down
+
 > SGD installed correctly with no errors and starts normally
+
 > visit http://localhost
 
