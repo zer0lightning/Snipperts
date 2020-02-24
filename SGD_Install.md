@@ -4,7 +4,7 @@
 
 **1. Install Virtualbox Guests**
 
-**Windows Server 2019 Activer Directory Services, DNS and Remote Desktop Services Roles**
+**Windows Server 2019**
 
 >Processor: 2 Core / RAM: 4gb / HDD: 200gb
 >Network Adapter1: BridgeMode (Allow Promiscuous) - Internal
@@ -20,6 +20,11 @@ Network and Configuration
  - Gateway: 142.232.241.254
  - DNS: 127.0.0.1
  
+ Install Roles
+ - Active Directory Services (Default Settings)
+ - DNS  (Default Settings)
+ - Remote Desktop Services Roles (Connection Broker, Session Host, Web Access)
+ 
  Post Install Role (AD and DNS)
  - Disable all Firewalls
  - Promote to AD and create new forest
@@ -29,8 +34,6 @@ Network and Configuration
  - Add A record for all host (dns, win10, sgd) and check PTR option
  - Active Directory Users and Computers (Add all the SGD Users)
  - Add those users to Domain Admins and Remote Desktop Users
-
-
  - Ping 8.8.8.8 and google.ca
  - Ping 142.232.241.254 and sgd.X.esa.bcit.ca
 
