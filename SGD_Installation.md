@@ -12,7 +12,7 @@
 - Windows Server 2019 (AD, DNS, RDS) is also your Windows Server Application Server
 - Windows 10 Client Enterprise is your Windows 10 Desktop Application Server
 
-## **1. Install Virtualbox Guests**
+## **1. Install VirtualBox Guests**
 
 **Windows Server 2019**
 
