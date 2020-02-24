@@ -17,7 +17,7 @@
 **Windows Server 2019**
 
 >Processor: 2 Core / RAM: 4gb / HDD: 200gb
->Network Adapter1: BridgeMode (Allow Promiscuous) - Internal
+>Network Adapter1: Bridge Mode (Allow Promiscuous)
 
 **Inside your Windows Server 2019**
 - Go to ninite.com to install some apps for SGD that you need, then proceed.
