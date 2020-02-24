@@ -42,13 +42,7 @@ Network and Configuration
 >Network Adapter1: BridgeMode (Allow Promiscuous) - Internal
 **Installation Screen**
 - Software Selection: Server with GUI, Java Support, System Administration Tools, Compatibility Libraries
-> Enable Networking
-
- - Set IP: 142.232.241.X
- - Subnet: 255.255.255.0
- - DNS: 142.232.141.X
- - Gateway: 142.232.241.X
- 
+> Enable Default Networking DHCP 
 
 **2. Installation of SGD 5.5 on Oracle Linux 7 Fails with Dependency Message, "Requires: libtclx8.4.so()"**
 
@@ -86,7 +80,13 @@ change enabled=0 to enabled=1
 
 > yum update
 
+Networking
 
+ - Set IP: 142.232.241.X
+ - Subnet: 255.255.255.0
+ - DNS: 142.232.141.X
+ - Gateway: 142.232.241.X
+ 
 **3. Download and Extract SGD Package**
 > http://tiny.cc/sgdinstall
 
