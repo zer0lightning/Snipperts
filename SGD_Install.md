@@ -40,7 +40,9 @@
  - Ping 142.232.241.254 and sgd.X.esa.bcit.ca
 
 **SGD Oracle Linux 7.7** 
+
 Processor: 2 Core / RAM: 4gb / HDD: 200gb
+
 **ISO:** [https://tiny.cc/oraclelinux77](https://tiny.cc/oraclelinux77)
 
 >Network Adapter1: Bridge Mode (Allow Promiscuous)
