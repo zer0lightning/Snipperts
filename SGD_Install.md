@@ -3,9 +3,14 @@
 **Notes: Prerequisites (USE LM Adapter!!!!)**
 - ISO and SGD RPM - http://tiny.cc/sgdinstall
 - Plan out your IP Address Range for these Host - Windows Server 2019 (AD, DNS, RS), SGD, Windows 10 Client
-- Download offline installers for the applications you want to install, or get it installed while your vm have internet access.
+- Download offline installers for the applications you want to install, or get it installed while your VM have internet access.
 - Your DNS Server needs to work for SGD to work.
 - SGD User Accounts need to be created locally for Linux, for Windows create it using AD Users and Computers.
+
+**Topology**
+- Tarantella Server is also your Linux Application Server
+- Windows Server 2019 (AD, DNS, RDS) is also your Windows Application Server
+- Windows 10 Client Enterprise is your Windows 10 Desktop Application Server
 
 **1. Install Virtualbox Guests**
 
