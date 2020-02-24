@@ -9,8 +9,8 @@
 >Processor: 2 Core / RAM: 4gb / HDD: 200gb
 
 Inside your Windows Server 2019
-Go to ninite.com to install some apps for SGD that you need, then proceed.
-Accomplish these before anything else.
+- Go to ninite.com to install some apps for SGD that you need, then proceed.
+- Accomplish these before anything else.
 
 >Network Adapter1: BridgeMode (Allow Promiscuous) - Internal
 	
