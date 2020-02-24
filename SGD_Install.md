@@ -137,17 +137,23 @@ change enabled=0 to enabled=1
 
 > visit http://localhost
 
+> Change Client Settings to HTML 5
+
+> Login to MY Desktop as root, click 'My Desktop'
+
+> If you can see the Oracle Desktop, it works. Otherwise go home.
+
 
 **Windows 10 Client**
 >Processor: 2 Core / RAM: 4gb / HDD: 200gb
 
 >Network Adapter1: Bridge Mode (Allow Promiscuous)
 	
-Inside your Windows 10 Client
+**Inside your Windows 10 Client**
 Go to ninite.com to install some apps for SGD that you need, then proceed.
 Accomplish these before anything else.
 
-Post Install
+**Post Install**
  - Change Computer Name, Disable UAC, Disable Firewall and Update 
  - Set IP: 142.232.241.X
  - Subnet: 255.255.255.0
@@ -155,7 +161,7 @@ Post Install
  - DNS: 142.232.241.X
  - Reboot Machine
  
-Domain Joining and Remote
+**Domain Joining and Remote**
  - Login as local user
  - Domain join using 'domain', use your fruit name (ex. apple)
  - Login using Administrator and Password
@@ -163,3 +169,4 @@ Domain Joining and Remote
  - Reboot
  - Login using regulardomainuser@yourdomain.com
  
+**SGD Objects Installation are not covered by this guide.**
