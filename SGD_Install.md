@@ -1,6 +1,7 @@
 ## Installing Secure Global Desktop with Oracle Linux 7.7
 
 **Notes: Prerequisites (USE LM Adapter!!!!)**
+- ISO and SGD RPM - http://tiny.cc/sgdinstall
 - Plan out your IP Address Range for these Host - Windows Server 2019 (AD, DNS, RS), SGD, Windows 10 Client
 - Download offline installers for the applications you want to install, or get it installed while your vm have internet access.
 - Your DNS Server needs to work for SGD to work.
