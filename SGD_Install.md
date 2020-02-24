@@ -92,7 +92,7 @@ Static IP Address for Networking
  - Subnet: 255.255.255.0
  - DNS: 142.232.141.X
  - Gateway: 142.232.241.254
-
+ 
 **3. Download and Extract SGD Package**
 > http://tiny.cc/sgdinstall
 
