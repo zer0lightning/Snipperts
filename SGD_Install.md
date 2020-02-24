@@ -7,13 +7,13 @@
 **Windows Server 2019 Activer Directory Services, DNS and Remote Desktop Services Roles**
 
 >Processor: 2 Core / RAM: 4gb / HDD: 200gb
+>Network Adapter1: BridgeMode (Allow Promiscuous) - Internal
 
 Inside your Windows Server 2019
 - Go to ninite.com to install some apps for SGD that you need, then proceed.
 - Accomplish these before anything else.
 
->Network Adapter1: BridgeMode (Allow Promiscuous) - Internal
-	
+Network and Configuration
  - Change Computer Name, Disable UAC, Disable Firewall and Update 
  - Set IP: 142.232.241.X
  - Subnet: 255.255.255.0
