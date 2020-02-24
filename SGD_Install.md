@@ -26,14 +26,16 @@ Network and Configuration
  - Remote Desktop Services Roles (Connection Broker, Session Host, Web Access)
  
  Post Install Role (AD and DNS)
+ 
+ Active Directory Role
  - Disable all Firewalls
  - Promote to AD and create new forest
- - Configure DNS Reverse lookup zone.
- - Configure DNS Role and Setup a NS Record and A Record
- - Create A for all the host and check PTR for each
- - Add A record for all host (dns, win10, sgd) and check PTR option
  - Active Directory Users and Computers (Add all the SGD Users)
  - Add those users to Domain Admins and Remote Desktop Users
+ 
+DNS Role
+ - Configure DNS Reverse lookup zone.
+ - Add A + PTR record for all host (dns, win10, sgd) and check PTR option
  - Ping 8.8.8.8 and google.ca
  - Ping 142.232.241.254 and sgd.X.esa.bcit.ca
 
