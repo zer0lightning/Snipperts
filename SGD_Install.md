@@ -8,31 +8,44 @@
 
 >Processor: 2 Core / RAM: 4gb / HDD: 200gb
 
+Inside your Windows Server 2019
+Go to ninite.com to install some apps for SGD that you need, then proceed.
+Accomplish these before anything else.
+
 >Network Adapter1: BridgeMode (Allow Promiscuous) - Internal
 	
  - Change Computer Name, Disable UAC, Disable Firewall and Update 
- - Set IP: 142.232.141.X
+ - Set IP: 142.232.241.X
  - Subnet: 255.255.255.0
+ - Gateway: 142.232.241.254
+ - DNS: 127.0.0.1
+ 
+ Post Install Role (AD and DNS)
+ - Disable all Firewalls
  - Promote to AD and create new forest
+ - Configure DNS Reverse lookup zone.
  - Configure DNS Role and Setup a NS Record and A Record
  - Create A for all the host and check PTR for each
- - Remote Desktop Services will be confiured later
+ - Add A record for all host (dns, win10, sgd) and check PTR option
+ - Active Directory Users and Computers (Add all the SGD Users)
+ - Add those users to Domain Admins and Remote Desktop Users
+
+
+ - Ping 8.8.8.8 and google.ca
+ - Ping 142.232.241.254 and sgd.X.esa.bcit.ca
 
 **SGD Oracle Linux 7.7** Processor: 2 Core / RAM: 4gb / HDD: 200gb
 **ISO:** [https://tiny.cc/oraclelinux77](https://tiny.cc/oraclelinux77)
 >Network Adapter1: BridgeMode (Allow Promiscuous) - Internal
 **Installation Screen**
-- Software Selection: Server with GUI, Java Support, System Administration Tools, Compatibility Libarires
-   > Login using root
+- Software Selection: Server with GUI, Java Support, System Administration Tools, Compatibility Libraries
+> Enable Networking
 
  - Set IP: 142.232.241.X
  - Subnet: 255.255.255.0
  - DNS: 142.232.141.X
  - Gateway: 142.232.241.X
  
- >Network Adapter2: NAT (Allow Promiscous) - Internet
- 
- >DNS: 142.232.241.X
 
 **2. Installation of SGD 5.5 on Oracle Linux 7 Fails with Dependency Message, "Requires: libtclx8.4.so()"**
 
@@ -102,3 +115,29 @@ Install Clients and Packages in order
 
 > visit http://localhost
 
+
+**Windows 10 Client**
+>Processor: 2 Core / RAM: 4gb / HDD: 200gb
+
+>Network Adapter1: BridgeMode (Allow Promiscuous) - Internal
+	
+Inside your Windows 10 Client
+Go to ninite.com to install some apps for SGD that you need, then proceed.
+Accomplish these before anything else.
+
+Post Install
+ - Change Computer Name, Disable UAC, Disable Firewall and Update 
+ - Set IP: 142.232.241.X
+ - Subnet: 255.255.255.0
+ - Gateway: 142.232.241.254
+ - DNS: 142.232.241.X
+ - Reboot Machine
+ 
+Domain Joining and Remote
+ - Login as local user
+ - Domain join using 'domain', use your fruit name (ex. apple)
+ - Login using Administrator and Password
+ - Enable Remote Assistance and Remote Desktop, allow those users to use it
+ - Reboot
+ - Login using regulardomainuser@yourdomain.com
+ 
