@@ -9,31 +9,31 @@
 >Processor: 2 Core / RAM: 4gb / HDD: 200gb
 >Network Adapter1: BridgeMode (Allow Promiscuous) - Internal
 
-Inside your Windows Server 2019
+**Inside your Windows Server 2019**
 - Go to ninite.com to install some apps for SGD that you need, then proceed.
 - Accomplish these before anything else.
 
-Network and Configuration
+**Network and Configuration**
  - Change Computer Name, Disable UAC, Disable Firewall and Update 
  - Set IP: 142.232.241.X
  - Subnet: 255.255.255.0
  - Gateway: 142.232.241.254
  - DNS: 127.0.0.1
  
- Install Roles
+ **Install Roles**
  - Active Directory Services (Default Settings)
  - DNS  (Default Settings)
  - Remote Desktop Services Roles (Connection Broker, Session Host, Web Access)
  
- Post Install Role (AD and DNS)
+ **Post Install Role (AD and DNS)**
  
- Active Directory Role
+ **Active Directory Role**
  - Disable all Firewalls
  - Promote to AD and create new forest
  - Active Directory Users and Computers (Add all the SGD Users)
  - Add those users to Domain Admins and Remote Desktop Users
  
-DNS Role
+**DNS Role**
  - Configure DNS Reverse lookup zone.
  - Add A + PTR record for all host (dns, win10, sgd) and check PTR option
  - Ping 8.8.8.8 and google.ca
@@ -52,7 +52,7 @@ Processor: 2 Core / RAM: 4gb / HDD: 200gb
 
 **2. Installation of SGD 5.5 on Oracle Linux 7 Fails with Dependency Message, "Requires: libtclx8.4.so()"**
 
-Open Terminal
+**Open Terminal**
 > Login as root
 
 > sudo -i 
@@ -86,7 +86,7 @@ change enabled=0 to enabled=1
 
 > yum update
 
-Static IP Address for Networking
+**Static IP Address for Networking**
 
  - Set IP: 142.232.241.X
  - Subnet: 255.255.255.0
@@ -96,13 +96,13 @@ Static IP Address for Networking
 **3. Download and Extract SGD Package**
 > http://tiny.cc/sgdinstall
 
-Install SGD Server
+**Install SGD Server**
 > yum install /tempdir/oracle-sgd-server-version.el7.x86_64.rpm
 - this process should install with no errors, otherwise repeat the yum configuration.
 
 > /opt/tarantella/bin/tarantella start
 
-Install Clients and Packages in order
+**Install Clients and Packages in order**
 > yum install oracle-sgd-clients-version.el7.noarch.rpm
 
 > yum install oracle-sgd-clients-legacy-version.el7.noarch.rpm
