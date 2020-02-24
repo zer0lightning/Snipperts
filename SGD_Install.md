@@ -39,12 +39,16 @@ DNS Role
  - Ping 8.8.8.8 and google.ca
  - Ping 142.232.241.254 and sgd.X.esa.bcit.ca
 
-**SGD Oracle Linux 7.7** Processor: 2 Core / RAM: 4gb / HDD: 200gb
+**SGD Oracle Linux 7.7** 
+Processor: 2 Core / RAM: 4gb / HDD: 200gb
 **ISO:** [https://tiny.cc/oraclelinux77](https://tiny.cc/oraclelinux77)
->Network Adapter1: BridgeMode (Allow Promiscuous) - Internal
+
+>Network Adapter1: Bridge Mode (Allow Promiscuous)
+
 **Installation Screen**
 - Software Selection: Server with GUI, Java Support, System Administration Tools, Compatibility Libraries
-> Enable Default Networking DHCP 
+- Enable Default Networking DHCP to get internet access
+- We will set the static after we manage to install SGD
 
 **2. Installation of SGD 5.5 on Oracle Linux 7 Fails with Dependency Message, "Requires: libtclx8.4.so()"**
 
@@ -82,18 +86,19 @@ change enabled=0 to enabled=1
 
 > yum update
 
-Networking
+Static IP Address for Networking
 
  - Set IP: 142.232.241.X
  - Subnet: 255.255.255.0
  - DNS: 142.232.141.X
- - Gateway: 142.232.241.X
- 
+ - Gateway: 142.232.241.254
+
 **3. Download and Extract SGD Package**
 > http://tiny.cc/sgdinstall
 
 Install SGD Server
 > yum install /tempdir/oracle-sgd-server-version.el7.x86_64.rpm
+- this process should install with no errors, otherwise repeat the yum configuration.
 
 > /opt/tarantella/bin/tarantella start
 
