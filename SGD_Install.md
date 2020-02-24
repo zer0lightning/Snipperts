@@ -170,3 +170,22 @@ Accomplish these before anything else.
  - Login using regulardomainuser@yourdomain.com
  
 **SGD Objects Installation/RDS are not covered by this guide.**
+
+
+## **5. Windows Server 2019 RDS Configuration**
+**Configuring Remote Desktop Services:**
+You need to create a Collection and publish the application for which you created objects for in SGD. Otherwise the application won’t work in SGD workspace.
+
+**Creating the Collection:**
+- In Server Manager > click RDS > Collection > Tasks > Create Session Collections
+- Enter a name for the collection
+- Select the RD Session Host server (your Windows Server 2019 server)
+- Enter a file share location (this doesn’t really make a difference for our lab purpose)
+- Accept the default user groups
+- Click ‘create’.
+
+**Adding the Application to the Collection:**
+- In Server Manager, click the collection you just made.
+- Under RemoteApp Programs, click ‘Publish RemoteApp Programs’
+- Select the programs you want to publish, and then click ‘Publish’
+
