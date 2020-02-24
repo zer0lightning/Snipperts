@@ -12,7 +12,7 @@
 - Windows Server 2019 (AD, DNS, RDS) is also your Windows Server Application Server
 - Windows 10 Client Enterprise is your Windows 10 Desktop Application Server
 
-**1. Install Virtualbox Guests**
+## **1. Install Virtualbox Guests**
 
 **Windows Server 2019**
 
@@ -62,7 +62,7 @@ Processor: 2 Core / RAM: 4gb / HDD: 200gb
 - Enable Default Networking DHCP to get internet access
 - We will set the static after we manage to install SGD
 
-**2. Installation of SGD 5.5 on Oracle Linux 7 Fails with Dependency Message, "Requires: libtclx8.4.so()"**
+## **2. Installation of SGD 5.5 on Oracle Linux 7 Fails with Dependency Message, "Requires: libtclx8.4.so()"**
 
 **Open Terminal**
 > Login as root
@@ -105,7 +105,7 @@ change enabled=0 to enabled=1
  - DNS: 142.232.141.X
  - Gateway: 142.232.241.254
  
-**3. Download and Extract SGD Package**
+## **3. Download and Extract SGD Package**
 > http://tiny.cc/sgdinstall
 
 **Install SGD Server**
@@ -144,7 +144,7 @@ change enabled=0 to enabled=1
 > If you can see the Oracle Desktop, it works. Otherwise go home.
 
 
-**Windows 10 Client**
+## **4. Windows 10 Client**
 >Processor: 2 Core / RAM: 4gb / HDD: 200gb
 
 >Network Adapter1: Bridge Mode (Allow Promiscuous)
@@ -169,4 +169,4 @@ Accomplish these before anything else.
  - Reboot
  - Login using regulardomainuser@yourdomain.com
  
-**SGD Objects Installation are not covered by this guide.**
+**SGD Objects Installation/RDS are not covered by this guide.**
