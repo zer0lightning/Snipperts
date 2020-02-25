@@ -1,11 +1,13 @@
 echo 'Setting up SSH on Pupply Linux for root login.'
 echo.
 echo.
+echo 'Patching host.allow SSH for All Users.'
 rm /etc/host.allow
 {
         echo 'ALL:LOCAL;' 
         echo 'SSH:ALL;'
 } >> /etc/host.allow
+echo 'Patching host.deny'
 rm /etc/host.deny
 {
         echo '#ALL:ALL;' 
