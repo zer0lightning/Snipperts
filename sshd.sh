@@ -4,13 +4,13 @@ echo.
 echo 'Patching host.allow SSH for All Users.'
 rm /etc/host.allow
 {
-        echo 'ALL:LOCAL;' 
-        echo 'SSH:ALL;'
+        echo 'ALL: LOCAL;' 
+        echo 'SSH: ALL;'
 } >> /etc/host.allow
 echo 'Patching host.deny'
 rm /etc/host.deny
 {
-        echo '#ALL:ALL;' 
+        echo '#ALL: ALL;' 
 } >> /etc/host.allow
 {
         echo 'AddressFamily any # Optional;' 
