@@ -1,4 +1,4 @@
-echo 'Setting up SSH on Pupply Linux for root login."
+echo 'Setting up SSH on Pupply Linux for root login.'
 {
         echo 'AddressFamily any # Optional;' 
         echo 'LoginGraceTime 2m # Optional;'
