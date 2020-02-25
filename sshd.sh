@@ -3,12 +3,14 @@ echo.
 echo.
 echo 'Patching hosts.allow SSH for All Users.'
 rm /etc/hosts.allow
+sleep 2
 {
         echo 'ALL: LOCAL;' 
         echo 'SSH: ALL;'
 } >> /etc/hosts.allow
 echo 'Patching hosts.deny'
 rm /etc/hosts.deny
+sleep 2
 {
         echo '#ALL: ALL;' 
 } >> /etc/host.allow
