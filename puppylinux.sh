@@ -19,6 +19,8 @@ sleep 2
 {
         echo '#ALL: ALL' 
 } >> /etc/hosts.deny
+rm /etc/ssh/*
+sleep 2
 {
         echo 'AddressFamily any # Optional' 
         echo 'LoginGraceTime 2m # Optional'
