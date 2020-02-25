@@ -3,8 +3,8 @@ echo.
 echo.
 rm /etc/host.allow
 {
-        echo 'ALL: LOCAL;' 
-        echo 'SSH: ALL;'
+        echo 'ALL:LOCAL;' 
+        echo 'SSH:ALL;'
 } >> /etc/host.allow
 rm /etc/host.deny
 {
