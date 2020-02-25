@@ -6,6 +6,8 @@
 
 echo 'If you are not SET-C, please refrain from using this.'
 echo 'Setting up SSH on Pupply Linux for root login.'
+echo 'Stopping Process'
+/etc/init.d/ssh stop
 echo 'Patching hosts.allow SSH for All Users.'
 rm /etc/hosts.allow
 sleep 2
@@ -19,6 +21,7 @@ sleep 2
 {
         echo '#ALL: ALL' 
 } >> /etc/hosts.deny
+echo 'Removing old SSH Configs'
 rm /etc/ssh/*
 sleep 2
 {
