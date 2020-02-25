@@ -20,5 +20,6 @@ echo.
 ssh-keygen -f /etc/ssh/sh_host_rsa_key -N "" -t rsa
 ssh-keygen -f /etc/ssh/sh_host_dsa_key -N "" -t dsa
 ssh-keygen -f /etc/ssh/ssh_host_key -N ""
+sleep 2
 ssh-keygen -A
 /etc/init.d/ssh start
