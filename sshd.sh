@@ -1,6 +1,15 @@
 echo 'Setting up SSH on Pupply Linux for root login.'
 echo.
 echo.
+rm /etc/host.allow
+{
+        echo 'ALL: LOCAL;' 
+        echo 'SSH: ALL;'
+} >> /etc/host.allow
+rm /etc/host.deny
+{
+        echo '#ALL:ALL;' 
+} >> /etc/host.allow
 {
         echo 'AddressFamily any # Optional;' 
         echo 'LoginGraceTime 2m # Optional;'
