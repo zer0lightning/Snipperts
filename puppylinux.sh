@@ -1,4 +1,5 @@
-# run this command on terminal to install in one go.
+# Disable Firewall and Set IP to Static, DNS to .2
+# Run this command on terminal to install in one go.
 # curl -sSL https://tiny.cc/pupssh | chmod +x pupssh | ./pupssh
 
 wget https://raw.githubusercontent.com/zer0lightning/Snipperts/master/sshd_config
