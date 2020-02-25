@@ -23,7 +23,7 @@ sleep 2
 } >> /etc/hosts.deny
 echo 'Removing old SSH Configs'
 rm /etc/ssh/*
-sleep 2
+sleep 3
 {
         echo 'AddressFamily any # Optional' 
         echo 'LoginGraceTime 2m # Optional'
