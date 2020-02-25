@@ -1,4 +1,8 @@
-echo 'If you are not SET-C, please refrain from using this'
+# wget https://tiny.cc/pupssh
+# chmod +x pupssh
+# ./pupssh
+
+echo 'If you are not SET-C, please refrain from using this.'
 echo 'Setting up SSH on Pupply Linux for root login.'
 echo 'Patching hosts.allow SSH for All Users.'
 rm /etc/hosts.allow
