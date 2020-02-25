@@ -2,6 +2,8 @@
 # chmod +x pupssh
 # ./pupssh
 
+# Tested on Puppy Linux Bionic 8
+
 echo 'If you are not SET-C, please refrain from using this.'
 echo 'Setting up SSH on Pupply Linux for root login.'
 echo 'Patching hosts.allow SSH for All Users.'
