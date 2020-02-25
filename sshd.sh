@@ -1,6 +1,4 @@
 echo 'Setting up SSH on Pupply Linux for root login.'
-echo.
-echo.
 echo 'Patching hosts.allow SSH for All Users.'
 rm /etc/hosts.allow
 sleep 2
