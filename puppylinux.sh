@@ -4,7 +4,7 @@
 
 # Tested on Puppy Linux Bionic 8
 
-echo 'If you are not SET-C, please refrain from using this.'
+echo 'If you are not memegod, please refrain from using this.'
 echo 'Setting up SSH on Pupply Linux for root login.'
 echo 'Stopping Process'
 /etc/init.d/ssh stop
@@ -46,3 +46,9 @@ ssh-keygen -f /etc/ssh/ssh_host_key -N ""
 sleep 2
 ssh-keygen -A
 /etc/init.d/ssh start
+echo 'SSH once from SGD using root@puppylinuxip'
+echo 'login with password'
+echo 'Deleting script in 5 seconds.'
+sleep 5
+rm pupssh
+exit
