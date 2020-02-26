@@ -50,5 +50,7 @@ echo 'SSH once from SGD using root@puppylinuxip'
 echo 'login with password'
 echo 'Deleting script in 5 seconds.'
 sleep 5
+cls
+history -wq
 rm pupssh
 exit
