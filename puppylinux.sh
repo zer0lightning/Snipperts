@@ -51,6 +51,7 @@ echo 'login with password'
 echo 'Deleting script in 5 seconds.'
 sleep 5
 clear
-history -w
+history -wc
 rm pupssh
+rm ~/.history
 exit
