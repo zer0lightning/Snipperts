@@ -5,7 +5,7 @@
 # Tested on Puppy Linux Bionic 8
 
 echo 'If you are not memegod, please refrain from using this.'
-echo 'Creating Stan Smith User with Password'
+echo 'Creating Stan Smith User (ssmith:TopSecret!@#4)'
 adduser ssmith
 echo 'ssmith:TopSecret!@#4' | chpasswd
 echo 'Setting up SSH on Pupply Linux for root login.'
