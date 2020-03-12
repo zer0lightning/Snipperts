@@ -1,0 +1,137 @@
+---------------------
+Don't Boot Your Machines Yet.
+---------------------
+
+Reinitialize your MAC Address on all VMs. This is to address the issue for Packet Loss.
+Link1: http://tiny.cc/vboxmacreset
+Link2: https://cutit.org/uuuRS
+Original Link: https://kb.datto.com/hc/en-us/articles/204423590-Changing-a-MAC-Address-on-a-VirtualBox-Virtual-Machine
+
+SGD Virtual Machine
+---------------------
+SGD 
+---------------------
+IP: 142.232.241.X
+SUBNET: 255.255.255.0
+GW: 142.232.241.254
+DNS: 8.8.8.8 (set this while you need internet)
+
+Login as root and password
+cd Downloads
+
+systemctl stop firewalld
+systemctl disable firewalld
+
+yum install server.rpm
+yum install clients.rpm
+yum install clients-legacy.rpm
+yum install tems.rpm
+
+nano /etc/hosts
+
+windows81 142.232.241.X
+centos8 142.232.241.X
+puppylinux 142.232.241.X
+oracle77 142.232.241.X
+winserver 142.232.241.X
+
+---------------------
+After Installing SGD
+---------------------
+
+IP: 142.232.241.X
+SUBNET: 255.255.255.0
+GW: 142.232.241.254
+DNS: 8.8.8.8 (set this while you need internet)
+DNS: 142.232.241.2 (set this when you dont need internet)
+
+Add Application Servers and Users
+(In SGD Web Console Application Server: Use IP not FQDN)
+
+SGD Linux User Entry CentOS
+Username: Sam Smith 
+Login: ssmith
+Password: TopSecret!@#4
+Type: Local Linux
+Application Server: 142.232.241.X
+
+SGD Linux User Entry PuppyLinux
+Username: Sam Smith 
+Login: ssmith
+Password: TopSecret!@#4
+Type: Local Linux
+Application Server: 142.232.241.X
+
+---------------------
+CENTOS Virtual Machine
+---------------------
+systemctl stop firewalld
+systemctl disable firewalld
+IP: 142.232.241.X
+SUBNET: 255.255.255.0
+GW: 142.232.241.254
+DNS: 142.232.241.2
+
+---------------------
+Windows 8 Virtual Machine
+---------------------
+disable firewall
+enable Remote Assistance and Desktop
+IP: 142.232.241.X
+SUBNET: 255.255.255.0
+GW: 142.232.241.254
+DNS: 142.232.241.2
+SGD Application Server Settings:
+- Application Server Hostname: 142.232.241.X
+- The mapping for the hostname was taken cared by the hostsname, since patricks is flopping.
+SGD User Entry:
+- Username: Sam Smith 
+- Password: TopSecret!@#4
+- Type: Local Windows
+- Application Server: 142.232.241.X
+
+---------------------
+Windows Server 2016
+---------------------
+SGD Application Server Settings:
+- Application Server Hostname: 142.232.241.X
+SGD User Entry:
+- Username: ssmith
+- Password: TopSecret!@#4
+- Type: Local Windows
+- Application Server: 142.232.241.X
+- SGD Login: Force Authentication When Testing
+
+Application for Puppy Linux
+/usr/bin/palemoon
+/usr/bin/hexalate
+/usr/bin/pupsysInfo
+
+Default File Manager for SGD
+xdg-open .
+
+---------------------
+Puppy Linux
+---------------------
+- Set Static IP: Click Connect App in Desktop
+- Wired or Wireless LAN -> eth0 -> Static IP 
+IP: 142.232.241.X
+SUBNET: 255.255.255.0
+GW: 142.232.241.254
+DNS: 142.232.241.2
+- Use this profile -> Yes to save configuration
+Installing openssh-server
+- Open 'Install' App in Desktop, click the gear icon, update repository.
+- Close 'Install' App and launch it again.
+- Search and install openssh-server
+
+Enable SSH Server (script below)
+- It adds user ssmith:TopSecret!@#4
+- Deletes SSH Old Configuration
+- Enable Root Login to All Users
+- Apply the Config for SSH SGD Labs
+- Just login once from SGD Server to PuppyLinux to save publickey.
+
+wget https://tiny.cc/pupssh
+chmod +x pupssh
+./pupssh
