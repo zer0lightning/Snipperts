@@ -85,7 +85,7 @@ yum-config-manager --enable ol7_optional_latest
 nano /etc/yum.repos.d/oracle-linux-ol7.repo
 Look for Entry on [ol7_optional_latest]
 change enabled=0 to enabled=1
-yum update
+yum -y update
 ```
 
 **Static IP Address for Networking**
@@ -170,6 +170,7 @@ DNS: 10.10.10.X
 
 [**Configuring Remote Desktop Services:**](https://nedimmehic.org/2017/02/08/how-to-install-remote-desktop-services-2016-quick-start-deployment/)
 - You need to create a Collection and publish the application for which you created objects for in SGD. Otherwise the application won’t work in SGD workspace.
+- Enable RDP and Add User.
 
 **Creating the Collection:**
 - In Server Manager click RDS Collection Tasks Create Session Collections
