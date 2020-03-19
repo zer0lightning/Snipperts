@@ -173,8 +173,14 @@ Accomplish these before anything else.
 
 
 ## **5. Windows Server 2019 RDS Configuration**
-**Configuring Remote Desktop Services:**
-You need to create a Collection and publish the application for which you created objects for in SGD. Otherwise the application won’t work in SGD workspace.
+**Install Active Directory Domain Services**
+
+- **Reboot** after installing ADDS and promote Domain Admin.
+- Rebooting avoids the issue of RDS not having right to some databases.
+- Install Remote Desktop Services.
+
+[**Configuring Remote Desktop Services:**](https://nedimmehic.org/2017/02/08/how-to-install-remote-desktop-services-2016-quick-start-deployment/)
+- You need to create a Collection and publish the application for which you created objects for in SGD. Otherwise the application won’t work in SGD workspace.
 
 **Creating the Collection:**
 - In Server Manager > click RDS > Collection > Tasks > Create Session Collections
