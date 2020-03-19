@@ -96,10 +96,9 @@ DNS: 142.232.141.X
 Gateway: 10.10.10.X
 ```
 
-## **3. Download and Extract SGD Package**
-http://tiny.cc/sgdinstall
+## **3. **Install SGD Server****
+[SGD RPM](http://tiny.cc/sgdinstall)
 
-**Install SGD Server**
 ```
 yum install /tempdir/oracle-sgd-server-version.el7.x86_64.rpm
 - It install with no errors, otherwise repeat the yum configuration.
