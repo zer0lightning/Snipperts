@@ -64,9 +64,7 @@ Processor: 2 Core / RAM: 4gb / HDD: 200gb
 - Enable Default Networking DHCP to get internet access
 - We will set the static after we manage to install SGD
 
-**Open Terminal**
-- Login as root
-
+**Login using root**
 ```
 sudo -i 
 systemctl stop firewalld
@@ -100,7 +98,6 @@ Gateway: 10.10.10.X
 [SGD RPM](http://tiny.cc/sgdinstall)
 - unzip the file, enter the directory.
 
-Terminal:$
 ```
 cd SGDRPM
 sudo yum install -y *.rpm
@@ -153,14 +150,9 @@ DNS: 10.10.10.X
  
 **Domain Joining and Remote**
  - Login as local user
- - Domain join using 'domain', use your fruit name (ex. apple)
- - Login using Administrator and Password
- - Enable Remote Assistance and Remote Desktop, allow those users to use it
- - Reboot
- - Login using regulardomainuser@yourdomain.com
- 
-**SGD Objects Installation/RDS are not covered by this guide.**
-
+ - Domain join using 'domain'.
+ - Enable Remote Assistance and Remote Desktop, allow those users to use it.
+ - Reboot, then login regulardomainuser@yourdomain.com
 
 ## **5. Windows Server 2019 RDS Configuration**
 **Install Active Directory Domain Services**
