@@ -65,7 +65,7 @@ Processor: 2 Core / RAM: 4gb / HDD: 200gb
 - We will set the static after we manage to install SGD
 
 **Open Terminal**
-Login as root
+- Login as root
 
 ```
 sudo -i 
