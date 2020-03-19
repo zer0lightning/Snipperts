@@ -100,10 +100,11 @@ Gateway: 10.10.10.X
 http://tiny.cc/sgdinstall
 
 **Install SGD Server**
+```
 yum install /tempdir/oracle-sgd-server-version.el7.x86_64.rpm
-- this process should install with no errors, otherwise repeat the yum configuration.
-
+- It install with no errors, otherwise repeat the yum configuration.
 /opt/tarantella/bin/tarantella start
+```
 
 **Install Clients and Packages in order**
 ```
