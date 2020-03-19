@@ -98,10 +98,12 @@ Gateway: 10.10.10.X
 
 ## **3. **Install SGD Server****
 [SGD RPM](http://tiny.cc/sgdinstall)
+- unzip the file, enter the directory.
 
+Terminal:$
 ```
-yum install /tempdir/oracle-sgd-server-version.el7.x86_64.rpm
-- It install with no errors, otherwise repeat the yum configuration.
+cd SGDRPM
+sudo yum install -y *.rpm
 /opt/tarantella/bin/tarantella start
 ```
 
