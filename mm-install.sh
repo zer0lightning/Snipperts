@@ -1,8 +1,8 @@
 #!/bin/bash
 # MegaMario Install Centos7, Redhat7, OracleLinux7
-# wget http://tiny.cc/mm-install
-# sudo chmod +x mm-install
-# ./mm-install
+# wget http://tiny.cc/mema-install
+# sudo chmod +x mema-install
+# ./mema-install
 
 echo "Installing Nux Repo"
 wget https://github.com/zer0lightning/filedownloads/raw/master/nux-dextop-release-0-5.el7.nux.noarch.rpm
