@@ -1,3 +1,4 @@
+# Installing Teamviewer on Oracle Linux 7.7
 yum install epel-release -y
 wget https://download.teamviewer.com/download/linux/teamviewer-host.x86_64.rpm
 yum install qt5-qtdeclarative-5.9.7-1.el7.x86_64  -y
