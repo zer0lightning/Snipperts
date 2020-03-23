@@ -1,6 +1,6 @@
 #!/bin/bash
-# wget http://tiny.cc/mmegamario-install
-# sudo chmod +x megamario-install.sh
+# wget http://tiny.cc/mm-install
+# sudo chmod +x mm-install.sh
 # ./megamario.sh
 
 echo "Installing Nux Repo"
