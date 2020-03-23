@@ -1,7 +1,7 @@
 #!/bin/bash
 # wget http://tiny.cc/mm-install
-# sudo chmod +x mm-install.sh
-# ./mm-install.sh
+# sudo chmod +x mm-install
+# ./mm-install
 
 echo "Installing Nux Repo"
 wget https://github.com/zer0lightning/filedownloads/raw/master/nux-dextop-release-0-5.el7.nux.noarch.rpm
