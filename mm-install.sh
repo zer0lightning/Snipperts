@@ -1,4 +1,5 @@
 #!/bin/bash
+# MegaMario Install Centos7, Redhat7, OracleLinux7
 # wget http://tiny.cc/mm-install
 # sudo chmod +x mm-install
 # ./mm-install
