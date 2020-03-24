@@ -16,4 +16,4 @@ echo "Installing MegaMario"
 sudo yum -y install megamario
 sleep 5
 echo "Launching MegaMario"
-./usr/bin/megamario
+/usr/bin/megamario
